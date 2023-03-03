@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { LoginContext } from "../Context/LoginContext";
 import { Container, Form, Button } from "react-bootstrap";
+import '../Login.css'
 
 export default function Login() {
   const { username, setUsername, setIsLoggedIn } = useContext(LoginContext);
@@ -8,7 +9,7 @@ export default function Login() {
   return (
     <Container className="bg-dark my-5 pb-5">
       <h1 className="text-center text-white py-4">Login</h1>
-      <form className="w-50 mx-auto">
+      <form className="mx-auto">
         <Form.Group>
           <Form.Label>Username</Form.Label>
           <Form.Control
