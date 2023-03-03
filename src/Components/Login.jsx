@@ -14,7 +14,7 @@ const {username, setUsername, setIsLoggedIn} = useContext(LoginContext)
         onChange={(e) => setUsername(e.target.value)}
       />
       <input type="password" placeholder="Password" />
-      <button onClick={setIsLoggedIn(true)}>
+      <button onClick={() => setIsLoggedIn(true)}>
         Login
       </button>
     </div>
