@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { LoginContext } from "../Context/LoginContext";
 import { Container, Form, Button } from "react-bootstrap";
-import '../Login.css'
+import '../style/Login.css'
 
 export default function Login() {
   const { username, setUsername, setIsLoggedIn } = useContext(LoginContext);
